@@ -1,0 +1,41 @@
+.heading{
+    color: #6c757d;
+  }
+
+  .inside_input_text{
+    position: absolute;
+    margin-top: 1rem;
+    left: 29%;
+    user-select: none;
+    pointer-events: none;
+  
+  }
+
+  
+/* input elements */
+.input_element{
+    width: 85%;
+    margin: 0;
+    padding: 1rem;
+    border-color: transparent;
+  }
+  .input_element:focus{
+    outline: none;
+  }
+  
+  
+  .inside_input_icon{
+    position:absolute;
+    left: 26%;
+    margin-top: 0.8rem;
+    background-color: snow;
+    font-size: 30px;
+  }
+  .input_overall{
+    background-color: white;
+    margin: 0 25% 0 25%
+  }
+  /* input elements */
+  
+  
+  

@@ -1,0 +1,15 @@
+:root{
+  --red-color : rgba(255,7,58,.12549019607843137);
+  --blue-color: rgba(0,123,255,.06274509803921569);
+  --green-color: rgba(40,167,69,.12549019607843137);
+}
+
+body{
+  background-color: #161625!important;
+  font-family: archia !important;
+}
+
+@font-face {
+  font-family: 'archia';
+  src: local('archia'), url(./fonts/Archia_Regular/Archia\ Regular\ Desktop/Archia-Regular.otf) format('truetype');
+}

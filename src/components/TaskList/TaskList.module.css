@@ -1,0 +1,30 @@
+.icon_right{
+    text-align: left !important;
+    padding-left: 10px;
+    display: flex;
+    gap:20px
+}
+
+.buttons{
+    border: 0px;
+    background-color: rgba(219,85,129,.12549019607843137);
+    color: #6c757d;
+    left:65%;
+    font-weight: 700;
+    font-family: archia;
+  }
+  
+  .buttons:hover{
+    background-color:#6c757d;
+    color:rgb(20, 20, 20);
+  }
+
+  table .col1{
+      width: 1em;
+  }
+  table .col2{
+    width: 20em;
+}
+table .col3{
+    width: 10em;
+}
