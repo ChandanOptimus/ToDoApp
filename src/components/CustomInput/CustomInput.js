@@ -9,7 +9,7 @@ const CustomInput = (props) => {
         <span id="inputSpan" className={styles['inside_input_text']}></span>
       </div>
 
-      <div className={styles.input_div} id="input_label">
+      <div id="input_label">
           <div className={styles.input_overall}>
             <i className="fas fa-heartbeat inside_input_icon"></i>
             <input

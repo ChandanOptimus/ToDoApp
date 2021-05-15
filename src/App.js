@@ -41,9 +41,13 @@ function App() {
   const addTaskHandler = () => {
     if (newTask !== "") {
       // setTaskList(...newTask)
-      newTaskList.push(newTask);
-      localStorage.setItem("NEW_LIST", newTaskList);
-      setNewTask("");
+      if (newTaskList.length < 8) {
+        newTaskList.push(newTask);
+        localStorage.setItem("NEW_LIST", newTaskList);
+        setNewTask("");
+      } else {
+        alert("Cannot add more than 8");
+      }
     }
   };
   const resetInputHandler = () => {
@@ -51,41 +55,53 @@ function App() {
   };
 
   const moveToInProgress = (event) => {
-    let taskName = event.target.parentElement.parentElement.previousSibling.children[0].id;
+    let taskName =
+      event.target.parentElement.parentElement.previousSibling.children[0].id;
     let taskList = [...newTaskList];
     let inProgtaskList = [...inProgressNewTaskList];
-
-    for (let i = 0; i < taskList.length; i++) {
-      if (taskList[i] == taskName) {
-        inProgtaskList.push(taskList[i]);
-        taskList.splice(i, 1);
-        setTaskList(taskList);
-        setinProgressNewTaskList(inProgtaskList);
+    if (inProgtaskList.length < 8) {
+      for (let i = 0; i < taskList.length; i++) {
+        if (taskList[i] == taskName) {
+          inProgtaskList.push(taskList[i]);
+          taskList.splice(i, 1);
+          setTaskList(taskList);
+          setinProgressNewTaskList(inProgtaskList);
+          break;
+        }
       }
+    } else {
+      alert("Cannot add more than 8");
     }
   };
   const markAsFinished = (event) => {
-    let taskName = event.target.parentElement.parentElement.previousSibling.children[0].id;
+    let taskName =
+      event.target.parentElement.parentElement.previousSibling.children[0].id;
     let taskList = [...inProgressNewTaskList];
     let fintaskList = [...finishedTaskList];
-
-    for (let i = 0; i < taskList.length; i++) {
-      if (taskList[i] == taskName) {
-        fintaskList.push(taskList[i]);
-        taskList.splice(i, 1);
-        setinProgressNewTaskList(taskList);
-        setfinishedTaskList(fintaskList);
+    if (fintaskList.length<8) {
+      for (let i = 0; i < taskList.length; i++) {
+        if (taskList[i] == taskName) {
+          fintaskList.push(taskList[i]);
+          taskList.splice(i, 1);
+          setinProgressNewTaskList(taskList);
+          setfinishedTaskList(fintaskList);
+          break;
+        }
       }
+    } else {
+      alert("Cannot add more than 8");
     }
   };
   const deleteFromList = (event) => {
-    let taskName = event.target.parentElement.parentElement.previousSibling.children[0].id;
+    let taskName =
+      event.target.parentElement.parentElement.previousSibling.children[0].id;
     let taskList = [...finishedTaskList];
 
     for (let i = 0; i < taskList.length; i++) {
       if (taskList[i] == taskName) {
         taskList.splice(i, 1);
         setfinishedTaskList(taskList);
+        break;
       }
     }
   };

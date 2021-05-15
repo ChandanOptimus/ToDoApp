@@ -1,51 +1,82 @@
-.align_centre{
+.align_centre {
   text-align: center;
-  
 }
 
-
-.redcardWrap{
+.redcardWrap {
   width: 400px;
   height: 40vh;
   margin: 0vw 1vw;
   background-color: var(--red-color);
   color: var(--bright-red);
 }
-.greencardWrap{
+.greencardWrap {
   width: 400px;
   height: 40vh;
   margin: 0vw 1vw;
   background-color: var(--green-color);
   color: var(--bright-green);
-
 }
-.bluecardWrap{
+.bluecardWrap {
   width: 400px;
   height: 40vh;
   margin: 0vw 1vw;
   background-color: var(--blue-color);
   color: var(--bright-blue);
-
 }
 
-.all_Cards{
+
+
+.all_Cards {
   display: flex;
   justify-content: space-between;
   margin: 0px 10%;
-  color:#6c757d;
+  color: #6c757d;
 }
 
-.buttons{
+.buttons {
   margin: 2rem;
   border: 0px;
-  background-color: rgba(219,85,129,.12549019607843137);
+  background-color: rgba(219, 85, 129, 0.12549019607843137);
   color: #6c757d;
   padding: 10px 25px;
   font-weight: 700;
   font-family: archia;
 }
 
-.buttons:hover{
-  background-color:#6c757d;
-  color:rgb(20, 20, 20);
+.buttons:hover {
+  background-color: #6c757d;
+  color: rgb(20, 20, 20);
+}
+
+
+
+@media (max-width: 1367px) {
+  .all_Cards {
+    display: block;
+    justify-content: space-between;
+    margin: 0px;
+    color: #6c757d;
+  }
+
+  .redcardWrap {
+    width: 100%;
+    height: 40vh;
+    margin: 0vw 0vw;
+    background-color: var(--red-color);
+    color: var(--bright-red);
+  }
+  .greencardWrap {
+    width: 100%;
+    height: 40vh;
+    margin: 0vw 0vw;
+    background-color: var(--green-color);
+    color: var(--bright-green);
+  }
+  .bluecardWrap {
+    width: 100%;
+    height: 40vh;
+    margin: 0vw 0vw;
+    background-color: var(--blue-color);
+    color: var(--bright-blue);
+  }
 }
