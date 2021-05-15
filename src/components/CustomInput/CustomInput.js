@@ -7,6 +7,7 @@ const CustomInput = (props) => {
       <div className={styles.heading} id="heading">
         <h2>{props.title}</h2>
         <span id="inputSpan" className={styles['inside_input_text']}></span>
+        <span id="inputSpan" className={styles['inside_input_text_mobile']}>Enter new task here!</span>
       </div>
 
       <div id="input_label">

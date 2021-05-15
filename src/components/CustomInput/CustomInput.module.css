@@ -32,6 +32,12 @@
   background-color: white;
   margin: 0 25% 0 25%;
 }
+.inside_input_text_mobile {
+  position: absolute;
+  user-select: none;
+  pointer-events: none;
+  display: none;
+}
 /* input elements */
 
 @media (max-width: 1024px) {
@@ -39,6 +45,13 @@
     position: absolute;
     user-select: none;
     pointer-events: none;
+    display: none;
+  }
+  .inside_input_text_mobile {
+    position: absolute;
+    user-select: none;
+    pointer-events: none;
+    display: contents;
   }
 
   /* input elements */
