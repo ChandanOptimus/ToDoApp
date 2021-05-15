@@ -8,19 +8,24 @@
   width: 400px;
   height: 40vh;
   margin: 0vw 1vw;
-  background-color: var(--red-color)
+  background-color: var(--red-color);
+  color: var(--bright-red);
 }
 .greencardWrap{
   width: 400px;
   height: 40vh;
   margin: 0vw 1vw;
   background-color: var(--green-color);
+  color: var(--bright-green);
+
 }
 .bluecardWrap{
   width: 400px;
   height: 40vh;
   margin: 0vw 1vw;
-  background-color: var(--blue-color)
+  background-color: var(--blue-color);
+  color: var(--bright-blue);
+
 }
 
 .all_Cards{

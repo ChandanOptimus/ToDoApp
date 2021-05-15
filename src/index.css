@@ -2,6 +2,9 @@
   --red-color : rgba(255,7,58,.12549019607843137);
   --blue-color: rgba(0,123,255,.06274509803921569);
   --green-color: rgba(40,167,69,.12549019607843137);
+  --bright-red:#ff073a;
+  --bright-blue:#007bff;
+  --bright-green:#28a745;
 }
 
 body{
